@@ -217,7 +217,7 @@ header {
 
 /*---------------SECTION-----------------*/
 
-.latest_e-books{
+.latest_e-books, .popular_e-books, .pg_publish_e-books{
     width: 1050px;
     height: 400px;
     margin: 10px auto; 
@@ -229,24 +229,35 @@ header {
 }
 
 #books{
-    height: 70%;
-    width: 19.6%;
+    height: 65%;
+    width: 16%;
     background-color: white;
     position: relative;
     float: left;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 2px;
+    margin: 3px;
 }
 
-.popular_e-books{
-    width: 1050px;
-    height: 400px;
-    margin: 10px auto; 
-    margin-top: 30px;
-    padding-top: 5px;
+#books img {
+    width: 100%;         
+    height: 100%;         
+    object-fit: cover;    
+}
+
+#books img:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px rgb(255, 255, 255);
+}
+
+/*---------------FOOTER-----------------*/
+
+footer{
+    background-color: #1F1F1F;
     position: relative; 
-    text-align: justify;
-    justify-content: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    height: 200px; 
 }
