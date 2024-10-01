@@ -39,31 +39,40 @@
             </div>
         </nav>
         <header>
-            <p id="ppglogohome"><img id="imgpglogohome"src="C:\Users\ACER\Downloads\Project Gutenberg.png" alt="Project Gutenberg"/></p>
-            <p id="mission">To encourage the creation and distribution of eBooks</p>
-            <div class="donation">
-                <button id="close" name="close_button" title="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                </button>
-                <p id="p1">Project Gutenberg needs your Donation!</p>
-                <p id="p2">Everything from Project Gutenberg is gratis, libre, and completely without cost to readers. If you find Project Gutenberg useful, please consider a small donation to help Project Gutenberg digitize more books, maintain its online presence, and improve Project Gutenberg programs and offerings. Other ways to help include digitizing, proofreading and formatting, or reporting errors.</p> 
-                <button id="donation_button" name="donation_button" title="Donate">
-                    Make a donation
-                </button>
-            </div>
-            <div class="search">
-                <input id="browse_e-books" type="text" name="browse_e-books" title="Browse E-Books" value="Search title, author, publisher, ISBN..." />
-                <button id="search_button" name="search_button" title="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343">
-                        <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
-                    </svg>
-                </button>
+            <div class="header-container">
+                <div class="logo">
+                    <p id="ppglogohome"><img id="imgpglogohome"src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\project-gutenberg-logo-home.png" alt="Project Gutenberg"/></p>
+                    <p id="mission">To encourage the creation and distribution of eBooks</p>
+                </div>
+                <div class="donation-container">
+                    <div class="donation" id="close-container">
+                        <button id="close" name="close_button" title="Close"></button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </button>
+                    </div>
+                    <div class="donation" id="p-container">
+                        <p id="p1">Project Gutenberg needs your Donation!</p>
+                        <p id="p2">Everything from Project Gutenberg is gratis, libre, and completely without cost to readers. If you find Project Gutenberg useful, please consider a small donation to help Project Gutenberg digitize more books, maintain its online presence, and improve Project Gutenberg programs and offerings. Other ways to help include digitizing, proofreading and formatting, or reporting errors.</p> 
+                        <button id="donation_button" name="donation_button" title="Donate">
+                            Make a donation
+                        </button>
+                    </div>
+                </div>
+                <div class="search">
+                    <input id="browse_e-books" type="text" name="browse_e-books" title="Browse E-Books" value="Search title, author, publisher, ISBN..." />
+                    <button id="csearch-searchbutton" name="search_button" title="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343">
+                            <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </header>
-        <section>
+        <main>
+            <div class="main-container">
+                <h2 id="headings">Latest e-Books</h2>
+                <hr id="hrheadigs">
             <div class="latest_e-books">
-                <h2>Latest e-Books</h2>
-                <hr>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74493.cover.medium.jpg" alt="Tapiolassa"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74492.cover.medium.jpg" alt="Pyynikin"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74491.cover.medium.jpg" alt="A woman's war record"></div>
@@ -71,9 +80,9 @@
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74489.cover.medium.jpg" alt="A royal smuggler"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg24117.cover.medium.jpg" alt="Abner Daniel"></div>
             </div>
+                <h2 id="headings">Popular e-Books</h2>
+                <hr id="hrheadigs">
             <div class="popular_e-books">
-                <h2>Popular e-Books</h2>
-                <hr>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74488.cover.medium.jpg" alt="Rebevel ou le man des ardents"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74487.cover.medium.jpg" alt="La premiere fletrissure"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74486.cover.medium.jpg" alt="Zendan vanki"></div>
@@ -81,9 +90,9 @@
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74484.cover.medium.jpg" alt="The Octoroon"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg50494.cover.medium.jpg" alt="Okurrrr"></div>
             </div>
+                <h2 id="headings">Project Gutenberg Publish Books</h2>
+                <hr id="hrheadigs">
             <div class="pg_publish_e-books">
-                <h2>Project Gutenberg Publish Books</h2>
-                <hr>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74488.cover.medium.jpg" alt="Rebevel ou le man des ardents"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74487.cover.medium.jpg" alt="La premiere fletrissure"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74486.cover.medium.jpg" alt="Zendan vanki"></div>
@@ -91,52 +100,56 @@
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg74484.cover.medium.jpg" alt="The Octoroon"></div>
                 <div id="books"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\Books\pg50494.cover.medium.jpg" alt="Okurrrr"></div>
             </div>
-        </section>
+            </div>
+        </main>
         <footer>
             <div class="footer_container">
-                <div class="info">
-                    <h4>Our Sites</h4>
-                    <hr id="footerhr">
-                    <p id="links"><a href="#site">This is a site</a></p>
-                    <p id="links"><a href="#site">This is a site</a></p>
-                    <p id="links"><a href="#site">This is a site</a></p>
-                    <p id="links"><a href="#site">This is a site</a></p>
+                <div class="footer-informations">
+                    <div class="info">
+                        <h4>Our Sites</h4>
+                        <hr id="footerhr">
+                        <p id="links"><a href="#site">This is a site</a></p>
+                        <p id="links"><a href="#site">This is a site</a></p>
+                        <p id="links"><a href="#site">This is a site</a></p>
+                        <p id="links"><a href="#site">This is a site</a></p>
+                    </div>
+                    <div class="info">
+                        <h4>International</h4>
+                        <hr id="footerhr">
+                        <p id="links"><a href="#international">Australia</a></p>
+                        <p id="links"><a href="#international">United States</a></p>
+                        <p id="links"><a href="#international">France</a></p>
+                        <p id="links"><a href="#international">Germany</a></p>
+                        <p id="links"><a href="#international">Poland</a></p>
+                        <p id="links"><a href="#international">Austria</a></p>
+                    </div>
+                    <div class="info" id="info-links">
+                        <h4>Stay Connected</h4>
+                        <hr id="footerhr">
+                        <div id="socials">
+                            <p id="links"><a href="https://www.facebook.com/project.gutenberg"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\facebook.png" alt="Facebook"></a></p>
+                        <p id="links"><a href="https://www.facebook.com/gutenberg.new"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\youtube.png" alt="Facebook News"></a></p>
+                        <p id="links"><a href="https://twitter.com/gutenberg_org" title="twitter icons"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\twitter.png" alt="Twitter"></a></p>
+                        <p id="links"><a href="https://mastodon.social/@gutenberg_org"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\reddit.png" alt="Mastodon"></a></p>
+                        <p id="links"><a href="https://mastodon.social/@gutenberg_new"><img src="C:\Users\ACER\Downloads\WEBPROG-CASE-STUDY-PROJECT-GUTENBERG\instagram.png" alt="Mastodon News"></a></p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4>Partnership</h4>
+                        <hr id="footerhr">
+                        <p id="links"><a href="#partnership">iBiblio</a></p>
+                    </div>
                 </div>
-                <div class="info">
-                    <h4>International</h4>
-                    <hr id="footerhr">
-                    <p id="links"><a href="#international">Australia</a></p>
-                    <p id="links"><a href="#international">United States</a></p>
-                    <p id="links"><a href="#international">France</a></p>
-                    <p id="links"><a href="#international">Germany</a></p>
-                    <p id="links"><a href="#international">Poland</a></p>
-                    <p id="links"><a href="#international">Austria</a></p>
-                </div>
-                <div class="info">
-                    <h4>Stay Connected</h4>
-                    <hr id="footerhr">
-                    <p id="links"><a href="#socials">Facebook</a></p>
-                    <p id="links"><a href="#socials">Facebook News</a></p>
-                    <p id="links"><a href="#socials">Twitter</a></p>
-                    <p id="links"><a href="#socials">Mastodon</a></p>
-                    <p id="links"><a href="#socials">Mastodon News</a></p>
-                </div>
-                <div class="info">
-                    <h4>Partnership</h4>
-                    <hr id="footerhr">
-                    <p id="links"><a href="#partnershi">iBiblio</a></p>
+                <div class="footer_about">
+                    <ul>
+                        <li id="about"><a href="Privacy Policy">Privacy Policy</a></li>
+                        <li id="about"><a href="About Project Gutenberg">About Project</a></li>
+                        <li id="about"><a href="Terms of Use">Terms of Use</a></li>
+                        <li id="about"><a href="Contact Information">Contact Information</a></li>
+                        <li id="about"><a href="Get Help">Get Help</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer_about">
-                <ul>
-                    <li id="about"><a href="Privacy Policy">Privacy Policy</a></li>
-                    <li id="about"><a href="About Project Gutenberg">About Project</a></li>
-                    <li id="about"><a href="Terms of Use">Terms of Use</a></li>
-                    <li id="about"><a href="Contact Information">Contact Information</a></li>
-                    <li id="about"><a href="Get Help">Get Help</a></li>
-                </ul>
-            </div>
-            
         </footer>
     </div>
 </body>

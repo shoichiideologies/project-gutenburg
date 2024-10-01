@@ -2,15 +2,23 @@
     box-sizing: border-box;
 }
 
+.container{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #F9F9F9;
     margin: 0; 
     font-size: 1em;
-    overflow-x: hidden; 
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
 }
 
 nav {
     background-color: #1F1F1F;
+    max-width: 100%;
     position: relative; 
     top: 0px;
     left: 0px;
@@ -116,96 +124,133 @@ li a {
 /*-------------HEADER--------------*/
 
 header {
-    border-color: black;
-    width: 100%; 
-    height: 500px;
-    margin: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#ppglogohome{
+.header-container{
+    min-height: 500px;
+    max-width: 1050px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    padding: 0px;
-    margin-bottom: 0;
-}
-
-#imgpglogohome{
-    margin: 0;
-    padding: 0;
+    padding: 30px 0px 0px 10px;
 }
 
 #mission{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.donation {
-    width: 1050px;
-    height: 190px;
-    margin: 10px auto; 
-    background-color: rgb(241, 241, 241);
-    margin-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    position: relative; 
+    flex-wrap: wrap;
     text-align: justify;
-    justify-content: center;
+    margin: 0px 0px 10px 0px;
+    font-size: 16px;
 }
 
-#p1 {
-    text-align: center;
-    padding-bottom: 10px;
+#pglogohome{
+    flex-wrap: wrap;
+    text-align: justify;
+    margin: 0px 0px 10px 0px;
 }
 
-#donation_button {
-    float: right;
-    width: 200px;
-    height: 35px;
-    background-color: #C8A92E;
-    border-color: transparent;
-    border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    color: azure;
-    font-size: 14px;
+#ppglogohome #imgpglogohome{
+    width: 350px;
+}
+
+.donation-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ececec;
+}
+
+.donation{
+    padding: 0px 60px 0px 60px;
+    width: 100%
+}
+
+#close-container{
+    display: flex;
+    padding: 8px 8px 0px 0px;
+    margin: 0;
+    align-items: right;
+    justify-content: right;
 }
 
 #close {
-    position: absolute; 
-    top: 10px; 
-    right: 10px;
-    border: none; 
-    background: none; 
-    font-size: 16px;
+    align-items: right;
+    border: none;
+    background: none;
     cursor: pointer;
+    z-index: 1000; 
+}
+
+#p1, #p2{
+    margin-top: 0px;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+#p-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#donation_button {
+    align-self: flex-end;
+    width: 200px;
+    height: 35px;
+    background-color: #C8A92E;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo, .donation, .search{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
 }
 
 .search{
-    width: 1050px;
-    height: 60px; 
-    margin: auto; 
-    position: relative; 
-    text-align: justify;
-    justify-content: center;
+    padding:  40px 0px 0px 0px;
+    position: relative;
+    display: flex; 
+    align-items: center;
+    width: 100%; 
 }
 
-#browse_e-books{
-    width: 1050px;
-    height: 60px;
-    border-radius: 10px;
-    outline: none;
-    border: transparent;
+#browse_e-books {
     background-color: transparent;
-    padding-left: 25px;
+    flex-grow: 1; 
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    border: 1px solid #ebebeb;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+#csearch-searchbutton {
+    position: absolute;
+    right: 10px; 
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%; 
 }
 
 #browse_e-books:hover,
@@ -215,29 +260,48 @@ header {
     border-color: transparent;
 }
 
-/*---------------SECTION-----------------*/
+/*---------------MAIN-----------------*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px 40px 0px;
+}
+
+.main-container{
+    width: 1050px;
+    display: flex;
+    flex-direction: column; 
+}
+
+#headings{
+    padding: 10px 0px 10px 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+#hrheadings {
+    height: 5px; 
+    background-color: #000000; 
+    border: none; 
+    width: 100%; 
+    margin: 10px 0; 
+}
 
 .latest_e-books, .popular_e-books, .pg_publish_e-books{
-    width: 1050px;
-    height: 400px;
-    margin: 10px auto; 
-    margin-top: 30px;
-    padding-top: 5px;
-    position: relative; 
+    min-height: 100px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 #books{
-
-    height: 65%;
-    width: 16%;
-    background-color: white;
-    position: relative;
-    float: left;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 3px;
+    height: 250px;
+    width: 163.40px;
+    flex-wrap: wrap;
 }
 
 #books img {
@@ -250,28 +314,41 @@ header {
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px rgb(255, 255, 255);
 }
 
+
 /*---------------FOOTER-----------------*/
 
 footer {
     background-color: #1F1F1F;
-    width: 100%;               
-    height: 380px;              
-    padding: 0px;            
+    max-width: 100%;               
+    height: auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
 }
 
 .footer_container {
-    max-width: 1050px;       
-    margin: 0 auto;            
-    display: flex;
-    justify-content: space-between;  
+    max-width: 100%;    
+    width: 1050px;
+    height: 100%;
+    display: flex;   
     flex-wrap: wrap;            
+}
+
+.footer-informations{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 .info {
     width: 25%;                 
     color: white;
-    padding-left: 40px;
-    padding-top: 20px;
+    padding: 20px 5px 0px 5px;
 }
 
 #footerhr {
@@ -284,21 +361,35 @@ footer {
     margin: 3px;
 }
 
+#socials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p img{
+    width: 35px;
+}
+
 p a{
     text-decoration: none;
     color: #ebebeb;
 }
 
 .footer_about {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    padding: 20px 0;          
-    margin-top: 40px;
+    height: 20%;
+    margin: auto;
+    padding: 50px 0px 40px 0px;
+}
+
+.footer_about li{
+    margin: 5px 15px;
+    text-align: center;
 }
 
 .footer_about ul {
-    display: flex;          
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;  
     list-style-type: none;    
     padding: 0;
@@ -317,4 +408,33 @@ p a{
 
 #links a:hover, #about a:hover {
     text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+    .footer_about ul {
+        justify-content: space-evenly; 
+    }
+
+    .footer_about li{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer_container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
 }
