@@ -19,6 +19,8 @@ body {
 nav {
     background-color: #1F1F1F;
     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     position: relative; 
     top: 0px;
     left: 0px;
@@ -33,15 +35,19 @@ nav {
 }
 
 .surf {
-    width: 30%;
+    max-width: 30%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 form {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    flex-shrink: 1;
+    flex-grow: 1;
     top: 15px;
     left: 15px;
 }
