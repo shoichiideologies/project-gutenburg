@@ -174,12 +174,12 @@ header {
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: #ececec;
+    background-color: #ebebeb;
 }
 
 .donation{
     padding: 0px 60px 0px 60px;
-    width: 100%
+    width: 100%;
 }
 
 #close-container{
@@ -317,10 +317,12 @@ main{
     height: 100%;         
     object-fit: cover;    
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), -6px -6px 10px rgb(255, 255, 255);
+
 }
 
 #books img:hover{
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px rgb(255, 255, 255);
+
 }
 
 
