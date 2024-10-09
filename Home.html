@@ -7,22 +7,27 @@
     <link rel="icon" type="image/png" href="images/pglogo/favicon .ico" sizes="16x16">
     <title>Free eBooks | Project Gutenberg</title>
     <link rel="stylesheet" href="home.css">
+    
 </head>
 <body>
     <div class="container">
         <nav>
             <div class="menu">
                 <ul>
+                    <img src="images/pglogo/menu.svg" alt="" id="menuIcon">
                     <li>
                         <a id="main_logo" href="#home" class="no-hover">
                             <img src="images/pglogo/project-gutenberg-logo-toggle-menu.png" alt="Project Gutenberg" draggable="false">
                         </a>
                     </li>
-                    <li id="menuli"><a href="#home">Home</a></li>
-                    <li id="menuli"><a href="#catalog">Catalog</a></li>
-                    <li id="menuli"><a href="#about">About</a></li>
-                    <li id="menuli"><a href="#help">Help</a></li>
-                    <li id="menuli"><a href="#donate">Donate</a></li>
+                    <div id="listContainer">
+                        <li id="menuli"><a href="#home">Home</a></li>
+                        <li id="menuli"><a href="#catalog">Catalog</a></li>
+                        <li id="menuli"><a href="#about">About</a></li>
+                        <li id="menuli"><a href="#help">Help</a></li>
+                        <li id="menuli"><a href="#donate">Donate</a></li>
+                    </div>
+                    
                   </ul>
             </div>
             <div class="surf">
@@ -40,25 +45,27 @@
         </nav>
         <header>
             <div class="header-container">
-                <div class="logo">
+                <div class="logo" id="headerdiv">
                     <p id="ppglogohome"><img id="imgpglogohome"src="images/pglogo/project-gutenberg-logo-home.png" alt="Project Gutenberg"/></p>
                     <p id="mission">To encourage the creation and distribution of eBooks</p>
                 </div>
-                <div class="donation-container">
+                <div class="donation-container" id="headerdiv">
                     <div class="donation" id="close-container">
                         <button id="close" name="close_button" title="Close"></button>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                     </button>
                     </div>
                     <div class="donation" id="p-container">
                         <p id="p1">Project Gutenberg needs your Donation!</p>
-                        <p id="p2">Everything from Project Gutenberg is gratis, libre, and completely without cost to readers. If you find Project Gutenberg useful, please consider a small donation to help Project Gutenberg digitize more books, maintain its online presence, and improve Project Gutenberg programs and offerings. Other ways to help include digitizing, proofreading and formatting, or reporting errors.</p> 
+                        <p id="p2">Everything from Project Gutenberg is gratis, libre, and completely without cost to readers. 
+                            If you find Project Gutenberg useful, please consider a small donation to help Project Gutenberg digitize more books, maintain its online presence, and improve Project Gutenberg programs and offerings. Other ways to help include digitizing, proofreading and formatting, or reporting errors.</p> 
                         <button id="donation_button" name="donation_button" title="Donate">
                             Make a donation
                         </button>
                     </div>
                 </div>
-                <div class="search">
+                <div class="search" id="headerdiv">
                     <input id="browse_e-books" type="text" name="browse_e-books" title="Browse E-Books" placeholder="Search title, author, publisher, ISBN..." />
                     <button id="csearch-searchbutton" name="search_button" title="Search">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343">
@@ -127,11 +134,16 @@
                         <h4>Stay Connected</h4>
                         <hr id="footerhr">
                         <div id="socials">
-                            <p id="links"><a href="https://www.facebook.com/project.gutenberg"><img src="images/socials/facebook.png" alt="Facebook" title="Facebook"></a></p>
-                        <p id="links"><a href="https://www.facebook.com/gutenberg.new"><img src="images/socials/instagram.png" alt="Facebook News" title="Facebook News"></a></p>
-                        <p id="links"><a href="https://twitter.com/gutenberg_org" title="twitter icons"><img src="images/socials/twitter.png" alt="Twitter" title="Twitter"></a></p>
-                        <p id="links"><a href="https://mastodon.social/@gutenberg_org"><img src="images/socials/reddit.png" alt="Mastodon" title="Mastodon"></a></p>
-                        <p id="links"><a href="https://mastodon.social/@gutenberg_new"><img src="images/socials/youtube.png" alt="Mastodon News" title="Mastodon News"></a></p>
+                        <p id="links"><a href="https://www.facebook.com/project.gutenberg">
+                            <img src="images/socials/facebook.png" alt="Facebook" title="Facebook"></a></p>
+                        <p id="links"><a href="https://www.facebook.com/gutenberg.new">
+                            <img src="images/socials/instagram.png" alt="Facebook News" title="Facebook News"></a></p>
+                        <p id="links"><a href="https://twitter.com/gutenberg_org" title="twitter icons">
+                            <img src="images/socials/twitter.png" alt="Twitter" title="Twitter"></a></p>
+                        <p id="links"><a href="https://mastodon.social/@gutenberg_org">
+                            <img src="images/socials/reddit.png" alt="Mastodon" title="Mastodon"></a></p>
+                        <p id="links"><a href="https://mastodon.social/@gutenberg_new">
+                            <img src="images/socials/youtube.png" alt="Mastodon News" title="Mastodon News"></a></p>
                         </div>
                     </div>
                     <div class="info">
@@ -152,5 +164,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js" ></script>
 </body>
 </html>
