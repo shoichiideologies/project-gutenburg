@@ -7,5 +7,12 @@ menuIcon.addEventListener('click', () => {
     } else {
         listContainer.style.display = 'none'
     }
-    
+})
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1100) {
+        listContainer.style.display = 'flex';
+    } else {
+        listContainer.style.display = 'none';
+    }
 })

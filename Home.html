@@ -13,22 +13,19 @@
     <div class="container">
         <nav>
             <div class="menu">
-                <ul>
                     <img src="images/pglogo/menu.svg" alt="" id="menuIcon">
-                    <li>
-                        <a id="main_logo" href="#home" class="no-hover">
+                    <a id="main_logo" href="#home" class="no-hover">
                             <img src="images/pglogo/project-gutenberg-logo-toggle-menu.png" alt="Project Gutenberg" draggable="false">
-                        </a>
-                    </li>
-                    <div id="listContainer">
+                    </a>
+                <div id="listContainer">
+                    <ul id="menuul">
                         <li id="menuli"><a href="#home">Home</a></li>
                         <li id="menuli"><a href="#catalog">Catalog</a></li>
                         <li id="menuli"><a href="#about">About</a></li>
                         <li id="menuli"><a href="#help">Help</a></li>
                         <li id="menuli"><a href="#donate">Donate</a></li>
-                    </div>
-                    
-                  </ul>
+                    </ul>
+                </div>
             </div>
             <div class="surf">
                 <form>
@@ -77,37 +74,97 @@
         </header>
         <main>
             <div class="main-container">
-            <h2 id="headings">Latest e-Books</h2>
-            <hr id="hrheadigs">
-                <div class="latest_e-books">
-                    <div id="books"><img src="images/books/pg24117.cover.medium.jpg" alt="Tapiolassa"></div>
-                    <div id="books"><img src="images/books/pg50494.cover.medium.jpg" alt="Pyynikin"></div>
-                    <div id="books"><img src="images/books/pg74484.cover.medium.jpg" alt="A woman's war record"></div>
-                    <div id="books"><img src="images/books/pg74485.cover.medium.jpg" alt="Gods of the jungle"></div>
-                    <div id="books"><img src="images/books/pg74486.cover.medium.jpg" alt="A royal smuggler"></div>
-                    <div id="books"><img src="images/books/pg74487.cover.medium.jpg" alt="Abner Daniel"></div>
-                </div>
-                    <h2 id="headings">Popular e-Books</h2>
+                <div class="ebooks-container">
+                    <h2 id="headings">Latest</h2>
                     <hr id="hrheadigs">
-                <div class="popular_e-books">
-                    <div id="books"><img src="images/books/pg74488.cover.medium.jpg" alt="Rebevel ou le man des ardents"></div>
-                    <div id="books"><img src="images/books/pg74489.cover.medium.jpg" alt="La premiere fletrissure"></div>
-                    <div id="books"><img src="images/books/pg74490.cover.medium.jpg" alt="Zendan vanki"></div>
-                    <div id="books"><img src="images/books/pg74491.cover.medium.jpg" alt="A handy dictionary of mythology"></div>
-                    <div id="books"><img src="images/books/pg74492.cover.medium.jpg" alt="The Octoroon"></div>
-                    <div id="books"><img src="images/books/pg74493.cover.medium.jpg" alt="Okurrrr"></div>
-                </div>
+                    <div class="ebooks">
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book1.jpg" alt="Tapiolassa"></div>
+                            <a class="title" href="exbook.html">Tapiolassa</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book2.jpg" alt="Pyynikin"></div>
+                            <a class="title" href="exbook.html">Apple-pie and other Nursey Tales</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book3.jpg" alt="A woman's war record"></div>
+                            <a class="title" href="exbook.html">Abner Daniel</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book4.jpg" alt="Gods of the jungle"></div>
+                            <a class="title" href="exbook.html">The Octoroon</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book5.jpg" alt="A royal smuggler"></div>
+                            <a class="title" href="exbook.html">A Handy Dictionary of Mythology</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book6.jpg" alt="Abner Daniel"></div>
+                            <a class="title" href="exbook.html">Zendan Vanki</a>
+                        </div>
+                    </div>
+                    
+                    <h2 id="headings">Popular</h2>
+                    <hr id="hrheadigs">
+                    <div class="ebooks">
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book7.jpg" alt="Rebevel ou le man des ardents"></div>
+                            <a class="title" href="exbook.html">Fletrissure</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book8.jpg" alt="La premiere fletrissure"></div>
+                            <a class="title" href="exbook.html">Rebevel ou le man des ardents</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book9.jpg" alt="Zendan vanki"></div>
+                            <a class="title" href="exbook.html">A Royal Smuggler</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book10.jpg" alt="A handy dictionary of mythology"></div>
+                            <a class="title" href="exbook.html">The Avengers</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book11.jpg" alt="The Octoroon"></div>
+                            <a class="title" href="exbook.html">Woman's War Record</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book12.jpg" alt="Okurrrr"></div>
+                            <a class="title" href="exbook.html">Pyynikin ruoho</a>
+                        </div>
+                    </div>    
+       
                     <h2 id="headings">Project Gutenberg Publish Books</h2>
                     <hr id="hrheadigs">
-                <div class="pg_publish_e-books">
-                <div id="books"><img src="images/books/pg74488.cover.medium.jpg" alt="Rebevel ou le man des ardents"></div>
-                <div id="books"><img src="images/books/pg50494.cover.medium.jpg" alt="La premiere fletrissure"></div>
-                <div id="books"><img src="images/books/pg74490.cover.medium.jpg" alt="Zendan vanki"></div>
-                <div id="books"><img src="images/books/pg74486.cover.medium.jpg" alt="A handy dictionary of mythology"></div>
-                <div id="books"><img src="images/books/pg24117.cover.medium.jpg" alt="The Octoroon"></div>
-                <div id="books"><img src="images/books/pg74493.cover.medium.jpg" alt="Okurrrr"></div>
+                    <div class="ebooks">
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book13.jpg" alt="Rebevel ou le man des ardents"></div>
+                            <a class="title" href="exbook.html">Alice in Wonderland</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book14.jpg" alt="La premiere fletrissure"></div>
+                            <a class="title" href="exbook.html">Pride and Prejudice</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book15.jpg" alt="Zendan vanki"></div>
+                            <a class="title" href="exbook.html">David Goes Voyaging</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book16.jpg" alt="A handy dictionary of mythology"></div>
+                            <a class="title" href="exbook.html">Lycurgus</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book17.jpg" alt="The Octoroon"></div>
+                            <a class="title" href="exbook.html">Sex Problems of man</a>
+                        </div>
+                        <div class="book">
+                            <div class="cover"><img src="images/books/book18.jpg" alt="Okurrrr"></div>
+                            <a class="title" href="exbook.html">The Rhyme and Reason of Country Life</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            
         </main>
         <footer>
             <div class="footer_container">
