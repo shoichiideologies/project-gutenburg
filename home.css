@@ -524,10 +524,24 @@ p a{
         top:70px;
         left: 0px;
         bottom: 0px;
-        width: clamp(40vw, 50vw, 60vw);
+        width: clamp(30vw, 50vw, 60vw);
         background-color: #1F1F1F;
         opacity: 0.9;
     }
+    #menuul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menuli {
+        height: 60px;
+        width: 100%;
+    }
+
+    #menuli a{
+        width: 100%;
+    }
+
     #headerdiv{
         margin: 0px 30px;
     }
@@ -537,11 +551,3 @@ p a{
     }
 
 }
-/*
-@media (min-width:1100px){
-    #listContainer {
-        display: flex;
-        flex-direction: row;
-    } 
-}
-*/
