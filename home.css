@@ -234,6 +234,7 @@ header {
     color: azure;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
 
 .logo, .donation, .search{
@@ -336,12 +337,18 @@ main {
     flex-direction: column;
     align-items: center;
     width: 163.40px; 
+    transition: transform 0.3s ease;
+    gap: 4px;
 }
 
-.book:hover{
-    text-decoration: underline;
-    transform: scale(1.01);
-    color: #C8A92E;
+.book:hover {
+    transform: scale(1.03);
+}
+
+.book:hover .title {
+    color: hwb(48 0% 20%); 
+    text-decoration: underline; 
+    text-shadow: 2px 2px 7px #ffffff;
 }
 
 .cover {
@@ -352,25 +359,23 @@ main {
 .title {
     display: block; 
     max-width: 100%; 
-    margin: 8px 0;
+    margin: 13px 0;
     text-align: center;
     word-wrap: break-word; 
     text-decoration: none;
     color: black;
-    text-shadow: 1px 1px 1cqmin #eaeaea;
-    transition: background-color 2s linear 0s;
 }
 
 .cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 3px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), -6px -6px 10px rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.1), -6px -6px 10px rgb(255, 255, 255);
 }
 
 .cover img:hover {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px rgb(255, 255, 255);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.4), -6px -6px 10px rgb(255, 255, 255);
 }
 
 /*---------------FOOTER-----------------*/
