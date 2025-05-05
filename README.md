@@ -8,9 +8,9 @@ This project aims to enhance the user experience and accessibility while preserv
 
 ## Logo Redesign
 
-<img src="images/pglogo/project-gutenberg-logo-toggle-menu.png" width="100px">
+<img src="images/pglogo/project-gutenberg-logo-toggle-menu.png" width="200px" background-color="black">
 
-<img src="images/pglogo/project-gutenberg-logo-home.png" width="100px">
+<img src="images/pglogo/project-gutenberg-logo-home.png" width="200px" background-color="white">
 
 ---
 
