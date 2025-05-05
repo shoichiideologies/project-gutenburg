@@ -11,13 +11,14 @@ body {
     margin: 0; 
     font-size:s 1em;
     align-items: center;
-    justify-items: center;
     overflow-x: hidden;
+    padding: 0;
 }
 
 .container{
     max-width: 100%;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
