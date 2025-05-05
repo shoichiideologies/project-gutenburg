@@ -8,9 +8,9 @@ This project aims to enhance the user experience and accessibility while preserv
 
 ## Logo Redesign
 
-<img src="images/pglogo/project-gutenberg-logo-toggle-menu.png">
+<img src="images/pglogo/project-gutenberg-logo-toggle-menu.png" width="100px">
 
-<img src="images/pglogo/project-gutenberg-logo-home.png">
+<img src="images/pglogo/project-gutenberg-logo-home.png" width="100px">
 
 ---
 
@@ -28,4 +28,4 @@ This project aims to enhance the user experience and accessibility while preserv
 
 ## About
 
-This redesign is a school requirement under the course of web programming mastering front-end development. 
+This redesign is a school requirement under the course of web programming mastering front-end development.
