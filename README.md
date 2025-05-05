@@ -11,7 +11,7 @@ This project aims to enhance the user experience and accessibility while preserv
 
 ---
 
-## Documentation: 
+## Documentation
 
 <a href="https://tropical-pufferfish-469.notion.site/Case-Study-Project-Gutenberg-2c23b0560f174942af8c2f4b01069943?pvs=4">Project Gutenberg | Notion</a>
 
